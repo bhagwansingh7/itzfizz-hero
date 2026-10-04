@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html { background: #0e1116; }
+
+/* SVG groups rotate around their own centre */
+.wheel { transform-box: fill-box; transform-origin: center; }
+
+/* Promote animated layers to the GPU */
+.car, .trail, .char, .stat, .sky-far, .sky-near, .streak, .dawn, .bar { will-change: transform, opacity; }
